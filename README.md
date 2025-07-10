@@ -93,4 +93,3 @@ You can send files from the OBC via **SpaceDev**:
 
 For questions or improvements, feel free to open an issue or pull request.
 
-# ES-Sband-Sim
