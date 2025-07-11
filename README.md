@@ -1,6 +1,6 @@
 # EnduroSat OBC – RS485 UART Interface
 
-This repository contains Python code to interface with the EnduroSat OBC over RS485 using an FTDI USB-RS485 cable. It supports acknowledging commands to receive files from the OBC. This script supports operation with either single file or a schedule to transfer files to the S-band transmitter. 
+This repository contains Python code to interface with the EnduroSat OBC over RS485 using an FTDI USB-RS485 cable. It pretends to be an receiving unit, and supports all necessary handshakes to receive files from an EnduroSat OBC (via SpaceDev  - `OBC_CP_GWClient` or through a schedule). 
 
 ---
 
