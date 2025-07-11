@@ -117,11 +117,9 @@ class ParsedPacket:
         logging.debug(f"CRC calculated - received: {self.calculated_crc.hex()} - {self.received_crc.hex()}")
 
         if not self.valid: 
-            # print(f'Length {len(raw_bytes)-HEADER_LEN} vs Header len {self.length}')
-            # print("📦 Raw packet invalid:", ' '.join(f'{b:02X}' for b in self.raw[:24]))
-            # print("📦 Raw packet invalid:", ' '.join(f'{b:02X}' for b in self.raw[-48:]))
-            # print("📦 Received CRC:", ' '.join(f'{b:02X}' for b in self.received_crc))
-            # print("📦 Calculated CRC:", ' '.join(f'{b:02X}' for b in self.calculated_crc))
+            if verbose: 
+                print("📦 Received CRC:", ' '.join(f'{b:02X}' for b in self.received_crc))
+                print("📦 Calculated CRC:", ' '.join(f'{b:02X}' for b in self.calculated_crc))
             raise ValueError("CRC mismatch")
         self.parse_payload()
 
