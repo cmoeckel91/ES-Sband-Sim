@@ -55,7 +55,9 @@ The default module ID for the gateway (`GW`) should be defined in the script. Ad
   Open *Device Manager* → your FTDI device → *Port Settings* → *Advanced* → Set **Latency Timer** to **1 ms**.
 
 ### Set flags 
+
 The flag `verbose` prints more information to the command line for debugging purposes. If the flag `loguart`is set, these details will be logged to uart_debug.log. If both are not set, the only information that is displayed is succesful file download. 
+
 ---
 
 ## Running the Interface
