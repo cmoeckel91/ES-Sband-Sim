@@ -68,7 +68,7 @@ To start the UART communication script:
 python uart_bid.py
 ```
 
-Logs will be saved to `uart_debug.log`.
+Data will saved to `./Data/` directory, logs will be saved to `uart_debug.log`.
 
 ---
 
@@ -78,7 +78,7 @@ You can send files from the OBC via **SpaceDev**:
 
 - Use the `OBC_CP_GWClient` utility in SpaceDev.
 - Set the identifier to be the same as the module ID set in the python script.
-- Setlect UPLOAD_FILE, WRITE and the corresponding file name and length. 
+- Select UPLOAD_FILE, WRITE and the corresponding file name and length. 
 - The script will automatically save received files in the `./Data/` directory under the same name.
 
 ---
